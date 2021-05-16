@@ -5,25 +5,25 @@
 class MeetingMood < Formula
   desc "Web app to collect people's moods in a meeting"
   homepage "https://github.com/wheresalice/meeting-mood"
-  version "0.0.1"
+  version "0.1.0"
   license "MIT"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/WheresAlice/meeting-mood/releases/download/v0.0.1/meeting-mood_Darwin_x86_64.tar.gz"
-    sha256 "9da9b0a28e06fe0f42c51564a96018b6197817583fa56bd09dcda2ea1039aafd"
+    url "https://github.com/WheresAlice/meeting-mood/releases/download/v0.1.0/meeting-mood_Darwin_x86_64.tar.gz"
+    sha256 "d0a51ff95b2f44e4884969a1580c108a2a5d7a5f3f6ee6e4ba7875b1f8f71d78"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/WheresAlice/meeting-mood/releases/download/v0.0.1/meeting-mood_Darwin_arm64.tar.gz"
-    sha256 "d4112ff5fa04c99357f9a8c70ee68e94703a80165ccc305200ade3d8d6daccc3"
+    url "https://github.com/WheresAlice/meeting-mood/releases/download/v0.1.0/meeting-mood_Darwin_arm64.tar.gz"
+    sha256 "91f8e9b2fc801dcd1e262e40a0c5962c0d19c0ba4c03d4220bbe57021ca9773a"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/WheresAlice/meeting-mood/releases/download/v0.0.1/meeting-mood_Linux_x86_64.tar.gz"
-    sha256 "8ce6fbee137447b7568c5e71b916912231c21ea0451504543ba4049e91eb6434"
+    url "https://github.com/WheresAlice/meeting-mood/releases/download/v0.1.0/meeting-mood_Linux_x86_64.tar.gz"
+    sha256 "12edc5ec6b16d0fa46928afb574969e9fb34aa7c008c131e4d9f20b2100f06c4"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/WheresAlice/meeting-mood/releases/download/v0.0.1/meeting-mood_Linux_arm64.tar.gz"
-    sha256 "b2687920c82ea57a6d3ed0c10c9f3e003111374c390ba6fccd0e0e201d53f1ff"
+    url "https://github.com/WheresAlice/meeting-mood/releases/download/v0.1.0/meeting-mood_Linux_arm64.tar.gz"
+    sha256 "4622198094eefbd8c5bd95ad0fb6f6dadc86d4528abb7712302187b1120f41d8"
   end
 
   def install
