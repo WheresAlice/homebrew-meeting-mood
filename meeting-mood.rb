@@ -5,25 +5,25 @@
 class MeetingMood < Formula
   desc "Web app to collect people's moods in a meeting"
   homepage "https://github.com/geeksforsocialchange/meeting-mood"
-  version "0.2.2"
+  version "0.2.3"
   license "MIT"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/geeksforsocialchange/meeting-mood/releases/download/v0.2.2/meeting-mood_Darwin_x86_64.tar.gz"
-    sha256 "9aa741ebeef8656e042eeed3aa68ea3ac3331d810def721d464b5d6bd638c810"
+    url "https://github.com/geeksforsocialchange/meeting-mood/releases/download/v0.2.3/meeting-mood_Darwin_x86_64.tar.gz"
+    sha256 "bd528e265510c9090716cd188b4181eaf9b467ce79691007493dd1d423fee02c"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/geeksforsocialchange/meeting-mood/releases/download/v0.2.2/meeting-mood_Darwin_arm64.tar.gz"
-    sha256 "883f68caf0241547635755a875f39c1e0a271f6c2a1718e2be5db6fdd8ad3260"
+    url "https://github.com/geeksforsocialchange/meeting-mood/releases/download/v0.2.3/meeting-mood_Darwin_arm64.tar.gz"
+    sha256 "916932a40ef0dfed3d74d525be7a6f7f6d28c51f71487025c39d53a3dbd83a8b"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/geeksforsocialchange/meeting-mood/releases/download/v0.2.2/meeting-mood_Linux_x86_64.tar.gz"
-    sha256 "cb0a91061a3c04468eb20a4083e3b138177ed481663b49622f5e8360b4b5f75c"
+    url "https://github.com/geeksforsocialchange/meeting-mood/releases/download/v0.2.3/meeting-mood_Linux_x86_64.tar.gz"
+    sha256 "6480e098d8745444be19f2e5f2eb6f3c700f286ad0e78f5bc0aeb5b3dab651d5"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/geeksforsocialchange/meeting-mood/releases/download/v0.2.2/meeting-mood_Linux_arm64.tar.gz"
-    sha256 "74ab394c2935110131b0dcd7705f8ea79ab659c701397932aae88336e168dd49"
+    url "https://github.com/geeksforsocialchange/meeting-mood/releases/download/v0.2.3/meeting-mood_Linux_arm64.tar.gz"
+    sha256 "fb7729816acdbeac3e80b298d6fca750820553e5b9dc8431c608cc4918de1f30"
   end
 
   def install
