@@ -5,25 +5,25 @@
 class MeetingMood < Formula
   desc "Web app to collect people's moods in a meeting"
   homepage "https://github.com/geeksforsocialchange/meeting-mood"
-  version "0.2.3"
+  version "0.2.4"
   license "MIT"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/geeksforsocialchange/meeting-mood/releases/download/v0.2.3/meeting-mood_Darwin_x86_64.tar.gz"
-    sha256 "bd528e265510c9090716cd188b4181eaf9b467ce79691007493dd1d423fee02c"
+    url "https://github.com/geeksforsocialchange/meeting-mood/releases/download/v0.2.4/meeting-mood_Darwin_x86_64.tar.gz"
+    sha256 "f9ab5fd8160424e3981b7b2dc67b11ca23c8085f08b7286af728d010d1c03dd5"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/geeksforsocialchange/meeting-mood/releases/download/v0.2.3/meeting-mood_Darwin_arm64.tar.gz"
-    sha256 "916932a40ef0dfed3d74d525be7a6f7f6d28c51f71487025c39d53a3dbd83a8b"
+    url "https://github.com/geeksforsocialchange/meeting-mood/releases/download/v0.2.4/meeting-mood_Darwin_arm64.tar.gz"
+    sha256 "3a6bb54f89b376cbdb02323112557b898d2ef20470c58172501fb4b513b4ec26"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/geeksforsocialchange/meeting-mood/releases/download/v0.2.3/meeting-mood_Linux_x86_64.tar.gz"
-    sha256 "6480e098d8745444be19f2e5f2eb6f3c700f286ad0e78f5bc0aeb5b3dab651d5"
+    url "https://github.com/geeksforsocialchange/meeting-mood/releases/download/v0.2.4/meeting-mood_Linux_x86_64.tar.gz"
+    sha256 "0cbc9d30c8f3329e1d010169eed606ee2c39f8d468d561766f0df803e1caec63"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/geeksforsocialchange/meeting-mood/releases/download/v0.2.3/meeting-mood_Linux_arm64.tar.gz"
-    sha256 "fb7729816acdbeac3e80b298d6fca750820553e5b9dc8431c608cc4918de1f30"
+    url "https://github.com/geeksforsocialchange/meeting-mood/releases/download/v0.2.4/meeting-mood_Linux_arm64.tar.gz"
+    sha256 "298409670e7f5f6e837f7e83bb6a7a3296c3793452c2d5b1030193bed6de3d30"
   end
 
   def install
