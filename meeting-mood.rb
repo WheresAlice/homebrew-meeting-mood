@@ -5,25 +5,25 @@
 class MeetingMood < Formula
   desc "Web app to collect people's moods in a meeting"
   homepage "https://github.com/geeksforsocialchange/meeting-mood"
-  version "0.2.4"
+  version "0.3.0"
   license "MIT"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/geeksforsocialchange/meeting-mood/releases/download/v0.2.4/meeting-mood_Darwin_x86_64.tar.gz"
-    sha256 "f9ab5fd8160424e3981b7b2dc67b11ca23c8085f08b7286af728d010d1c03dd5"
+    url "https://github.com/geeksforsocialchange/meeting-mood/releases/download/v0.3.0/meeting-mood_Darwin_x86_64.tar.gz"
+    sha256 "cb071add2d9ee8b8e040da4e0f7d00d9c7a3bdae2e89c3c634d7d3a809da533f"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/geeksforsocialchange/meeting-mood/releases/download/v0.2.4/meeting-mood_Darwin_arm64.tar.gz"
-    sha256 "3a6bb54f89b376cbdb02323112557b898d2ef20470c58172501fb4b513b4ec26"
+    url "https://github.com/geeksforsocialchange/meeting-mood/releases/download/v0.3.0/meeting-mood_Darwin_arm64.tar.gz"
+    sha256 "912570d0c804f2c006ccf9a678b1607cd3b16282a8ba7bba954fc5ebbd1871ae"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/geeksforsocialchange/meeting-mood/releases/download/v0.2.4/meeting-mood_Linux_x86_64.tar.gz"
-    sha256 "0cbc9d30c8f3329e1d010169eed606ee2c39f8d468d561766f0df803e1caec63"
+    url "https://github.com/geeksforsocialchange/meeting-mood/releases/download/v0.3.0/meeting-mood_Linux_x86_64.tar.gz"
+    sha256 "defb0324e8f7208ca09ea74c8ff2dc752d67b20d22c224a501fb2f4610cc0a08"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/geeksforsocialchange/meeting-mood/releases/download/v0.2.4/meeting-mood_Linux_arm64.tar.gz"
-    sha256 "298409670e7f5f6e837f7e83bb6a7a3296c3793452c2d5b1030193bed6de3d30"
+    url "https://github.com/geeksforsocialchange/meeting-mood/releases/download/v0.3.0/meeting-mood_Linux_arm64.tar.gz"
+    sha256 "48c437c41acef34dc2c0d05d209c7c39374a87d84b35888353b4b4a3ef377d75"
   end
 
   def install
