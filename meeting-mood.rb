@@ -5,28 +5,44 @@
 class MeetingMood < Formula
   desc "Web app to collect people's moods in a meeting"
   homepage "https://github.com/geeksforsocialchange/meeting-mood"
-  version "0.3.0"
+  version "0.3.2"
   license "MIT"
-  bottle :unneeded
 
-  if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/geeksforsocialchange/meeting-mood/releases/download/v0.3.0/meeting-mood_Darwin_x86_64.tar.gz"
-    sha256 "cb071add2d9ee8b8e040da4e0f7d00d9c7a3bdae2e89c3c634d7d3a809da533f"
-  end
-  if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/geeksforsocialchange/meeting-mood/releases/download/v0.3.0/meeting-mood_Darwin_arm64.tar.gz"
-    sha256 "912570d0c804f2c006ccf9a678b1607cd3b16282a8ba7bba954fc5ebbd1871ae"
-  end
-  if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/geeksforsocialchange/meeting-mood/releases/download/v0.3.0/meeting-mood_Linux_x86_64.tar.gz"
-    sha256 "defb0324e8f7208ca09ea74c8ff2dc752d67b20d22c224a501fb2f4610cc0a08"
-  end
-  if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/geeksforsocialchange/meeting-mood/releases/download/v0.3.0/meeting-mood_Linux_arm64.tar.gz"
-    sha256 "48c437c41acef34dc2c0d05d209c7c39374a87d84b35888353b4b4a3ef377d75"
+  on_macos do
+    if Hardware::CPU.intel?
+      url "https://github.com/geeksforsocialchange/meeting-mood/releases/download/v0.3.2/meeting-mood_Darwin_x86_64.tar.gz"
+      sha256 "38c7e9a994224926b8eb3248165df6de50c3caa9814fc780b2c1aa8bf8dbc6f6"
+
+      def install
+        bin.install "meeting-mood"
+      end
+    end
+    if Hardware::CPU.arm?
+      url "https://github.com/geeksforsocialchange/meeting-mood/releases/download/v0.3.2/meeting-mood_Darwin_arm64.tar.gz"
+      sha256 "f1649ca0dbcc6d4d01fba5f8343142003207b72a6ef43e193f867b405791b941"
+
+      def install
+        bin.install "meeting-mood"
+      end
+    end
   end
 
-  def install
-    bin.install "meeting-mood"
+  on_linux do
+    if Hardware::CPU.intel?
+      url "https://github.com/geeksforsocialchange/meeting-mood/releases/download/v0.3.2/meeting-mood_Linux_x86_64.tar.gz"
+      sha256 "bd561ec158cfff86a3bb47cd53d05b2f978d67f8a2b4127e1686faf65ac1cee1"
+
+      def install
+        bin.install "meeting-mood"
+      end
+    end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/geeksforsocialchange/meeting-mood/releases/download/v0.3.2/meeting-mood_Linux_arm64.tar.gz"
+      sha256 "98d11306940e6e09ae6b5c78a9bc24a0e629437d9fbe40b40f0e4608c0bd002b"
+
+      def install
+        bin.install "meeting-mood"
+      end
+    end
   end
 end
